@@ -1,0 +1,31 @@
+body {
+  background-color: blueviolet;
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding-top: 10px;
+}
+
+#main {
+  display: flex;
+  margin-top: 20px;
+  max-width: 50%;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+#submit {
+  margin-top: 10px;
+}
