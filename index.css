@@ -3,10 +3,17 @@ body {
   color: white;
 }
 
+* {
+  box-sizing: border-box;
+  font-family: 'Unbounded', cursive;
+}
+
 h1 {
   color: white;
   font-size: 3rem;
   text-align: center;
+  letter-spacing: 2px;
+  text-decoration: underline;
 }
 
 form {
@@ -18,14 +25,40 @@ label {
   padding-top: 10px;
 }
 
+input {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
 #main {
   display: flex;
-  margin-top: 20px;
-  max-width: 50%;
+  margin: 20px auto;
+  max-width: 90%;
   flex-wrap: wrap;
   gap: 25px;
 }
 
 #submit {
-  margin-top: 10px;
+  margin-top: 15px;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: blueviolet;
+}
+
+#submit:hover {
+  color: blueviolet;
+  background-color: white;
+  font-weight: bold;
+}
+
+.btn-remove {
+  align-self: center;
+  color: white;
+  border: none;
+  background-color: red;
+  border-radius: 2px;
+  padding: 2px 5px;
 }

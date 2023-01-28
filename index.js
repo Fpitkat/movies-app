@@ -2,7 +2,9 @@ $('form').on('submit', function (e) {
   e.preventDefault()
   const title = $('#title').val()
   const rating = $('#rating').val()
-  $('#main').append(`<p>The movie ${title} has a rating of ${rating}</p>`)
+
+  if (title.length < 2) return
+  $('#main').append(`<p>${title} has a rating of ${rating}</p>`)
   $('#main').append(`<button class='btn-remove'>X</button>`)
 })
 
